@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styel.css" />
+    <title>Pet Food Calculator</title>
+  </head>
+  <body style="display: flex; justify-content: space-around">
+    <div class="forDogs">
+      <h1>for Dogs</h1>
+      <!-- pet age -->
+      <label for="petAge">Dog Age</label>
+      <input type="range" name="petAge" id="petAge" min="0" max="2" value="0" />
+      <div class="petAge">Pupppy</div>
+      <!-- pet weight -->
+      <label for="dogWeight">Dog Weight</label>
+      <input
+        type="range"
+        name="dogWeight"
+        id="dogWeight"
+        min="1"
+        max="30"
+        value="1"
+      />
+      <div class="dogWeightBox">1kg</div>
+      <!-- pet activity -->
+      <label for="dogactivity">dogactivity</label>
+      <input
+        type="range"
+        name="dogactivity"
+        id="dogactivity"
+        min="0"
+        max="2"
+        value="0"
+      />
+      <div class="dogactivityBox">Lazy</div>
+      <button onclick="pet_calculator()">Submit</button>
+      <div class="inActive dogDaysCounter">
+        <label for="dayCounter_Dog"
+          >Number Of days you want food for your Dog</label
+        >
+        <br />
+        <input type="range" name="dayCounter_Dog" id="dayCounter_Dog" min="1" max="30" value="1" />
+      </div>
+      <div class="resultBoxforDogs">
+        <input
+          type="text"
+          id="result_field_for_dogs"
+          value="Food Per day"
+          size="7"
+          disabled
+        />
+      </div>
+    </div>
+
+    <div class="forCats">
+      <h1>For Cats</h1>
+      <!-- pet age -->
+      <label for="catAge">Cat Age</label>
+      <input type="range" name="catAge" id="catAge" min="0" max="2" value="0" />
+      <div class="catAgeBox">Kitten</div>
+      <!-- pet weight -->
+      <label for="catWeight">Cat Weight</label>
+      <input
+        type="range"
+        name="catWeight"
+        id="catWeight"
+        min="5"
+        max="15"
+        value="1"
+      />
+      <div class="catWeightBox">1kg</div>
+      <!-- pet activity -->
+      <label for="catactivity">Cat activity</label>
+      <input
+        type="range"
+        name="catactivity"
+        id="catactivity"
+        min="0"
+        max="2"
+        value="0"
+      />
+      <div class="catactivityBox">Lazy</div>
+      <button onclick="cat_food_calculator()">Submit</button>
+      <div class="resultBox">
+        <div class="inActive catDaysCounter">
+          <label for="dayCounter_Cat">result for Number of days </label> <br />
+          <input type="range" min="1" max="30" id="dayCounter_Cat" value="1" />
+        </div>
+        <div class="resultBoxforCats">
+          <input
+            type="text"
+            value="Food per day"
+            id="result_field_for_cats"
+            size="7"
+            disabled
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
